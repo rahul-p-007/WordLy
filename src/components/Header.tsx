@@ -1,0 +1,36 @@
+"use client";
+import { SignInButton, SignOutButton, UserButton } from "@clerk/nextjs";
+import { Button } from "./ui/button";
+import { SignedIn, SignedOut, useUser } from "@clerk/clerk-react";
+
+function Header() {
+  const { user } = useUser();
+  return (
+    <div className="flex items-center justify-between border-b-1 border-gray-300 ">
+      <div className="flex ml-2">
+        <h1 className="text-2xl">
+          word<span className="text-blue-700 text-4xl">L</span>y
+          {user && (
+            <span className="text-blue-400 text-2xl px-2">
+              {user.firstName}
+            </span>
+          )}
+        </h1>
+      </div>
+      <div className="mr-2">
+        <SignedOut>
+          <SignInButton mode="modal">
+            <Button>Sign In</Button>
+          </SignInButton>
+        </SignedOut>
+        <SignedIn>
+          <UserButton />
+          <SignedOut>
+            <Button>Sign Out</Button>
+          </SignedOut>
+        </SignedIn>
+      </div>
+    </div>
+  );
+}
+export default Header;
