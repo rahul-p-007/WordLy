@@ -73,7 +73,7 @@ function Sidebar() {
     );
     setGroupedData(grouped);
   }, [data]);
-  console.log(groupedData);
+  // console.log(groupedData);
   const menuOptions = (
     <>
       <NewDocumentButton />

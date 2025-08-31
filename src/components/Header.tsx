@@ -2,6 +2,7 @@
 import { SignInButton, SignOutButton, UserButton } from "@clerk/nextjs";
 import { Button } from "./ui/button";
 import { SignedIn, SignedOut, useUser } from "@clerk/clerk-react";
+import Breadcrumbs from "./Breadcrumbs";
 
 function Header() {
   const { user } = useUser();
@@ -17,6 +18,7 @@ function Header() {
           )}
         </h1>
       </div>
+      <Breadcrumbs />
       <div className="mr-2">
         <SignedOut>
           <SignInButton mode="modal">
