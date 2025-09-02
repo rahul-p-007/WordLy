@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-        <body>
+        <body className="scroll-y-hidden">
           <Header />
           <div className="flex min-h-screen">
             {/* SideBar */}
