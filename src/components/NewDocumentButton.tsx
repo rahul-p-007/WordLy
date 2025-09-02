@@ -14,7 +14,11 @@ function NewDocumentButton() {
     });
   };
   return (
-    <Button onClick={handleCreateNewDocument} disabled={isPending}>
+    <Button
+      onClick={handleCreateNewDocument}
+      disabled={isPending}
+      className="bg-white text-black hover:bg-white/80"
+    >
       {isPending ? "Creating..." : "New Doucment"}
     </Button>
   );

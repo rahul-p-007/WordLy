@@ -109,7 +109,7 @@ function Sidebar() {
     </>
   );
   return (
-    <div className="p-2 md:p-5 bg-gray-200 relative">
+    <div className="p-2 md:p-5 bg-gray-900 relative">
       <Sheet>
         <SheetTrigger className="md:hidden">
           <MenuIcon className=" hover:opcaity-30 rounded-lg" size={25} />
