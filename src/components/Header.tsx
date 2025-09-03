@@ -7,9 +7,9 @@ import Breadcrumbs from "./Breadcrumbs";
 function Header() {
   const { user } = useUser();
   return (
-    <div className="flex items-center justify-between border-b-1 border-gray-300 ">
+    <div className="flex items-center justify-between border-b-1 border-gray-300 bg-[#0d0e11]">
       <div className="flex ml-2">
-        <h1 className="text-2xl">
+        <h1 className="text-xl font-bold bg-gradient-to-r from-white to-white-glow bg-clip-text text-transparent">
           word<span className="text-blue-700 text-4xl">L</span>y
           {user && (
             <span className="text-blue-400 text-2xl px-2">

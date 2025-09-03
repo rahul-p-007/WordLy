@@ -13,7 +13,7 @@ import {
 import { FormEvent, use, useState, useTransition } from "react";
 import { Button } from "./ui/button";
 import { usePathname, useRouter } from "next/navigation";
-import { deleteDocument, inviteUserToDocument } from "@/action/actions";
+import { inviteUserToDocument } from "@/action/actions";
 import { toast } from "sonner";
 import { Input } from "./ui/input";
 function InviteUser() {
