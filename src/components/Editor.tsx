@@ -1,13 +1,12 @@
 "use client";
 import { useRoom } from "@liveblocks/react/suspense";
 // Import useMemo
-import { useEffect, useState, useMemo } from "react";
+import { useEffect, useState } from "react";
 import * as Y from "yjs";
 import { LiveblocksYjsProvider } from "@liveblocks/yjs";
 import { MoonIcon, SunIcon } from "lucide-react";
 import { Button } from "./ui/button";
 import { BlockNoteView } from "@blocknote/shadcn";
-import { BlockNoteEditor } from "@blocknote/core";
 import { useCreateBlockNote } from "@blocknote/react";
 import "@blocknote/core/fonts/inter.css";
 import "@blocknote/shadcn/style.css";
@@ -18,7 +17,7 @@ import ChatToDocument from "./ChatToDocument";
 
 type EditorProps = {
   doc: Y.Doc;
-  provider: any;
+  provider: LiveblocksYjsProvider;
   darkMode: boolean;
 };
 

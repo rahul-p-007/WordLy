@@ -2,17 +2,15 @@
 
 import {
   Dialog,
-  DialogClose,
   DialogContent,
   DialogDescription,
-  DialogFooter,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { FormEvent, use, useState, useTransition } from "react";
+import { FormEvent, useState, useTransition } from "react";
 import { Button } from "./ui/button";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { inviteUserToDocument } from "@/action/actions";
 import { toast } from "sonner";
 import { Input } from "./ui/input";
@@ -20,7 +18,6 @@ function InviteUser() {
   const [isOpen, setIsOpen] = useState(false);
   const [isPending, startTransition] = useTransition();
   const pathname = usePathname();
-  const router = useRouter();
   const [email, setEmail] = useState("");
 
   const handleSubmit = async (e: FormEvent) => {

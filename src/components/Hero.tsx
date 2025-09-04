@@ -7,7 +7,6 @@ import {
   MessageSquare,
   Languages,
 } from "lucide-react";
-import heroImage from "@/assets/hero-ai-docs.jpg";
 
 const Hero = () => {
   return (

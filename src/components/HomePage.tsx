@@ -19,7 +19,6 @@ import {
   Brain,
   Globe,
 } from "lucide-react";
-import heroImage from "@/assets/hero-ai-docs.jpg";
 
 const HomePage = () => {
   const features = [

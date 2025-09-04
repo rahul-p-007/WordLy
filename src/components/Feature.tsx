@@ -9,7 +9,6 @@ import { Button } from "@/components/ui/button";
 import {
   MessageSquare,
   Languages,
-  FileText,
   Sparkles,
   Zap,
   Shield,

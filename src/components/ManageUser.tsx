@@ -2,17 +2,15 @@
 
 import {
   Dialog,
-  DialogClose,
   DialogContent,
   DialogDescription,
-  DialogFooter,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { FormEvent, use, useState, useTransition } from "react";
+import { useState, useTransition } from "react";
 import { Button } from "./ui/button";
-import { inviteUserToDocument, removeUserFromDocument } from "@/action/actions";
+import { removeUserFromDocument } from "@/action/actions";
 import { toast } from "sonner";
 import useOwner from "@/lib/useOwner";
 import { useUser } from "@clerk/nextjs";
